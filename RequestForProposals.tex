@@ -1,0 +1,436 @@
+% Insert preamble and formatting instructions
+\documentclass[11pt]{article}
+\usepackage[super]{natbib}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{textcomp}
+\frenchspacing
+
+\begin{document}
+\title{Request for Proposals}
+\author{F2139-01}
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+This Request for Proposal seeks a solution to the problem of chronic
+pain among taxi drivers in the City of Toronto. Research demonstrates a
+link between long periods of driving and chronic pain\cite{KneePain, Okunribido2008}, and taxi drivers
+are particularly susceptible to this due to their long shifts\cite{thestar2012}.
+This document will begin by defining the key terms and the community.
+Using this context, it will then establish the problem and provide existing
+solutions to similar problems before providing an engineering framing for the problem.
+\section{Definitions}
+\label{sec:defs}
+The definitions of ergonomics, quality of life, and chronic pain, as
+well as their prevalence to taxi drivers are outlined in this section.
+
+\subsection{Ergonomics}
+\label{sec:ergonomics}
+
+The International Ergonomics Association defines ergonomics as “the
+study of human interactions and other elements within a system”. By
+utilizing ergonomics, engineers are able to optimize the suitability
+of equipment for the structure and functioning method of the human
+body. The development of ergonomic- equipment is applicable to
+taxi drivers because by optimizing the interaction of the cab driver
+and the vehicle to avoid repetitive strain injuries, the onset of
+chronic pain will be prolonged.
+
+\subsection{Chronic Pain}
+\label{sec:pain}
+
+Continuous pain that persists for 12 weeks or more is defined to be
+chronic pain. As taxi driver experience a gradual onset of chronic
+pain, avoiding or delaying its onset would enhance their work
+environment and furthermore the quality of life of a taxi driver.
+
+\subsection{Quality of Life}
+\label{sec:lifequal}
+
+Quality of life is defined as an individual’s evaluation, based on
+their society’s culture and value systems, of their current status in
+life with regards to personal goals, expectations, standards and
+concerns. Improving to the quality of life of taxi drivers is the
+purpose of this report.
+
+\section{Community Description}
+\label{sec:community}
+The taxicab community in the City of Toronto consists of over 10400 registered drivers, 
+and 4849 issued legal license plates.To become a taxicab driver the following is required 
+by the City of Toronto Municipal Licensing and Standards:
+\begin{enumerate}
+\item Complete the Effective Taxicab Training Program, a 17-day program run by the city. 
+Minimum pass average is 80\%. Program includes certification in first aid and CPR.
+\item Pass a criminal record background check
+\item Have a G License
+\item Pass a physical checkup by a qualified physician
+\end{enumerate}
+The total cost of this program is \$601.23\cite{MLS2013}.
+
+Licences must renewed yearly on the anniversary of issue and a refresher course must 
+be completed once every three years\cite{MLSChp545}.
+
+iTaxiworkers association is the only representative body of the taxicab community. It
+works to improve the quality of life of taxidrivers in Ontario by "providing legal defence
+and political advocacy for justice and reform"\cite{iTaxiWorkers2012}. The Toronto chapter
+has a membership of over 1000 people. Membership is \$35 per month\cite{iTaxi2012, Abdiemail}.
+\subsection{Demographics}
+The 2006 census conducted by iTaxi yielded the following results\cite{iTaxiWorkers2012}:
+\begin{table}[h]
+\centering
+\caption{Basic demographic data for taxi drivers in Toronto}
+\begin{tabular}{l c}
+ Total Drivers & 11 055 \\
+ Male & 96\% \\
+ Female & 4\% \\
+ Immigrants & 81\% \\
+ English as a foreign language & 76\% \\
+ Average hours worked per week & 48.1 \\
+ Median income & \$11 949
+\end{tabular}
+\end{table}
+\subsection{Plates}
+There are a number of different types of plates issued by the city but the vast majority 
+consist of two two types of plates: standard (3451) and ambassador (1313). 
+Standard plates enable multiple people to share the same vehicle and can be operated 24/7. 
+Ambassador plate can only be operated by one person (the owner of the plate) and can be 
+operated for a maximum of 12 hours a day. An ambassador license plate is required to 
+operate from Pearson International Airport. Standard licence plates can also be sold. 
+The current market value is up to \$300 000. The average taxi drives between 100 000 and 
+250 000 km per year. As a result the vehicles on average do not last more than 5 years. 
+Payment is as follows: the drop rate is \$4.25 + 25 cents for every 0.143 km of 
+travel\cite{thestar2012}.
+
+\subsection{Ownership and Responsibility}
+
+Almost all drivers belong to one of the major companies, like Beck, Diamond, Royal, City, 
+Co-op etc. The driver pays a yearly fee (varies by company) for a dispatch radio. The 
+driver is guided to a pickup location by a coordinator. Ownership also varies. For example,
+ at Beck Taxi, most of the vehicles are owned by the drivers themselves who just pay the 
+rate for the radio and get the car painted the company colours. At Royal taxi, most of the 
+cars are owned by garages and leased by drivers. Other circumstances are a collective of 
+drivers who share the price of a plate and a vehicle and operate shifts. In all 
+circumstances the driver keeps the profit he/she makes during the shift, but is also 
+directly responsible for the cleanliness and integrity of the vehicle, including gasoline. 
+Inspections are made weekly, bi-weekly or monthly depending on the company and offenders 
+have their frequency cut off and do not receive guidance to customers. Drivers will also 
+tell other drivers if their cab is messy and report them if problem is not rectified. To 
+be cut-off is horribly detrimental to drivers because if not guided from one pickup to 
+the next, much time is wasted waiting for customers and as a result the cost of the radio 
+and/or lease cannot be earned back and no profit is made\cite{thestar2012, Gowder2013}.
+
+\section{Stakeholders}
+\label{sec:stake}
+Taxi drivers as a community are connected with many groups in the City
+of Toronto. Any design for Taxi drivers may potentially impact the
+stakeholders connected to Taxi Drivers as well.
+ 
+\subsection{Taxi Drivers}
+The primary stakeholder is the Taxi Driver community in the City of
+Toronto. These taxi drivers constitute the defined community with a
+need. Improving the quality of life of this group through mitigating
+chronic pain is the main objective of this design.
+ 
+\subsection{Taxi Driver Union: iTaxiworkers Association}
+The association represents taxi drivers in Toronto and provides
+support for conflicts arising from police, dispatchers, systems or
+taxi companies. They are politically active in lobbying for improved
+working conditions for Taxi Drivers. The successful development of a
+design solution may involved dialogue with the association and the
+successfully implementation may involve promotion by the iTaxiworkers
+Association\cite{itaxi}.
+ 
+\subsection{Customers}
+Taxi drivers are employees of the service industry and the customers
+as the clients of taxi drivers are the consumers of the services. An
+ideal solution to improve the health of taxi drivers may require the
+assistance of customers. An active solution to the proposed problem
+may raise the safety and riding environment of the passenger.
+ 
+\subsection{Taxi Manufacturers}
+Taxi manufacturers provide vehicles and equipment for taxi drivers. A
+technical solution requiring physical changes to the car would need
+the support and approval of the manufacturers of taxis or taxi
+parts. Said solution would also need to be achievable by technologies
+available to the taxi manufacturers.
+ 
+\subsection{Taxi Companies}
+In the City of Toronto, the main taxi companies include Beck Taxi,
+Diamond, Royal Taxi and Co-op Cabs \cite{abouttaxis}. These companies
+may employ of taxi drivers or centralize dispatch operation for taxi
+drivers. Changes in the operation or the physical nature of the
+vehicle may require additional funding or approval from the taxi
+companies.
+ 
+\subsection{City of Toronto}
+The City of Toronto standardizes taxi training, licenses taxi drivers
+and establishes relevant policies affecting taxi drivers
+\cite{CityofToronto}. Design changes to the operation of physical
+nature of taxis are only possible with the approval of the city and
+may yield greater success with endorsement by the city.
+\section{Needs}
+\label{sec:needs}
+The workplace environment of taxi imposes strains on driver as it
+requires repetitive motions (pressing a pedal), a fixed postural
+position for extended periods of time, and the operation of a
+vehicle. These requirements not only induce the gradual onset of lower
+back, neck and knee pain in drivers, but also amplify it
+\cite{POSTULATED}. The quality of life of a taxi driver is diminished
+by the onset of pain; it becomes increasing more difficult to perform
+necessary functions for their job. By reducing the amount of pain
+experienced by taxi drivers, the standard of their job, and
+furthermore their quality of life, would improve as driver would spend
+less time working in conjunction with pain. Evidently, the onset of
+neck, lower back as well as knee pain is a problem in taxi drivers,
+and overcoming this issue would enhance their quality of life.
+ 
+Compelling evidence not-only illustrates the elevated risk of urban
+taxi drivers experiencing lower back pain, but also why it’s induced
+by driving. Whole body vibration (WBV) is used to define the
+mechanical energy oscillations transferred to the body as a whole
+(contrast to specific regions in the body) [ppt]. In the instance of
+taxi drivers, mechanical energy is transferred to them through the car
+seat [ppt]. The most common and hazardous vibratory exposure,
+regarding back problems, in occupational life is seated WBV
+\cite{ODrivers@Risk}. Bio-mechanical studies reinforce the link
+between LBP and vibration exposures. Studies support that taxi drivers
+experience whole-body vibrations \cite{KneePain, Serious}. Lower back
+pain is also stimulated by prolonged sitting [find source]. Thus, a
+not-only a greater amount time driving, but also distance induces a
+higher incidence rate of back injuries\cite{Question?}. This is
+reinforced by a positive correlation between driving a vehicle and
+patients experiencing LBP \cite{ODrivers@Risk}.  The study also
+mentioned that the “confined space within taxicabs may put taxi
+drivers at a greater risk for LBP, as bio-mechanical studies have
+shown that the driving activities within automobiles can impose
+postural strains on lumbar spines” \cite{KneePain}. The restrictive
+environment of taxi drivers clearly aggravates their back pain. Other
+work-related stresses in taxi drivers such as bending/twisting
+movements, air pollution, violence, and psychological strains may
+enhance the development of LBP \cite{KneePain, POSTULATED}. The
+prevalence of LBP in taxi drivers is reinforced by statistics; in the
+United States of America, 68.4 out of 100,000 (taxi and chauffeur)
+drivers compared to the 35.4 average experience musculoskeletal
+disorders \cite{68}. Also, low back pain is more prevalent in
+Norwegian taxi drivers (66\% for women, and 59\% for men) compared to
+the reference population (58\% for women, and 51\% for men). Similar
+results were established for Taiwanese urban taxi drivers, “51\%
+reported low back pain relative to 33\% for other professional
+drivers” \cite{Question?} LBP in taxi drivers is prevalent and induced
+by the whole body vibrations, prolonged sitting, and a restricted
+range of motion, all of which are caused by the taxi workplace
+environment.
+ 
+Taxi drivers experience elevated levels of knee pain, resulting mainly
+from excessive use of the knee joint in order to perform their
+service. Elevated level of knee pain in taxi driver is illustrated by
+its higher occurrence in drivers in Norway versus the local community
+(29\% vs 25\%) \cite{KneePain}. This is reinforced by a Taiwanese
+study that noted greater amount of knee pain in drivers than in its
+national average \cite{KneePain}. Repetitive strain injury, defined as
+an injury stimulated in a certain part of the body due to its overuse,
+is the root of knee pain in drivers\cite{RSI}. As drivers constantly
+use their knee to operate a vehicle, the joint is overused over time,
+resulting in the onset of pain. This is supported by data suggesting
+that “prolonged or repeated knee bending is a risk factor for knee OA
+[osteoarthritis], and that risk may be higher in jobs which entail
+both knee bending and mechanical loading”
+\cite{Osteoarthritis}. Furthermore, a positive correlation between
+repetitive motions during driving and knee pain has also been
+found. Prior to 1990, 25\% of drivers experienced knee pain compared
+with 18\% who operated vehicles made after 1990 \cite{KneePain}. This
+downfall coincides with a drastic shift of automatic transmission
+instead of manual, which requires more repetitive motion in the knee
+joint \cite{KneePain}. This data illustrates that a greater amount of
+pedal-pressing aggravates and elevates the risk of knee pain. It is
+evident that greater amounts of driving, which provoke repetitive
+strain injuries, induces knee pain.
+ 
+Prolonged sitting and twisting of the trunk are requirements of the
+taxi driver occupation, and both of which directly stimulate neck
+pain. The Canadian Centre for Occupational Health and Safety believes
+that driving can cause pain in the neck\cite{proof}. A study concluded
+that prolonged sitting and twisting or bending of the trunk both
+exhibit a positive correlation with neck pain \cite{neck}. As a taxi
+driver’s occupation requires prolonged sitting, it is evident that
+their work-place environment stimulates neck pain.
+\section{Reference Designs}
+\label{sec:designs}
+
+\subsection{Problems with sitting}
+\label{sec:sittingproblems}
+
+%I'm not sure where this is meant to go, but it should go somewhere):**!!!!
+Sitting for extended periods of time is a serious stress on the human body. As weight is adjusted
+onto the thighs, body weight compresses the main arteries beneath the thighs. This results in 
+decrease of blood flow. Muscles must do work to maintain an upright posture, and due to the decrease 
+of blood flow, there is a buildup of lactic acids, which results in muscle spasms, also known as static
+loading, and eventual muscle fatigue. Furthermore, all weight above the waist is balanced on the ischial 
+tuberosities (in the buttocks), which are essentially inverted pyramids onto which all the weight is 
+balanced. This results in discomfort. Moreover; the geometry of most seats results in a flattening of the 
+spine. The lower spine in equilibrium position curves inwards towards the stomach. When curvature of the 
+spine is flattened, the lumbar discs of the spine compress together which in turn results in a migration of 
+the gel that insulates each disc. In the absence of cushioning gel, degradation of the disc occurs, which 
+ultimately results in aggravation of the nerves (back pain), hernia and eventually rupture. The latter two 
+require surgery\cite{ergoCentricAnatomy2011}.
+
+\subsection{What constitutes a good seat?}
+A good seat should have a pneumatic seat adjustment that acts as a shock absorber for the spine. The seat 
+should allow a person to sit upright against the backrest with full contact while still leaving at least a 
+three finger width clearance between the back of the knees and the seat. The shorter the seat pan, the better. 
+The seat should waterfall downwards to reduce pressure on the veins beneath the thighs. The seat should also curve 
+upwards at the sides to redistribute weight across a larger surface area. The seat itself should be neither dish 
+up or down in the centre, because up results in pressure on the spine and down results in pressure on the veins. 
+A faint ridge to match the geometry of the buttocks is optimal\cite{ergoCentricchair2011, Natpost2005}.
+
+
+\subsection{An example of a good seat: ObusForme}
+The seat has firm lumbar support that pushes the spine back into its natural position. 
+It also has lateral curves that fit the geometry of the upper back to reduce muscle work\cite{ObusFormebackrest}. 
+The backrest angle relative to the seat is just over 90\textdegree. The support also has a neck brace which supports
+the neck, keeping the head aligned with the spine\cite{ObusFormedriverchair}.
+ObusForme also has driver seats that reduce pressure on the veins and redistributes weight 
+on both the spine and the ischial tuberosities by shaping to the human body\cite{ObusFormecushion}.
+
+\subsection{Bose truck driver seat}
+Truck drivers drive for up to 12 hours per day and as a result face many of the same issues as taxi drivers. 
+Primarily is the issue of vibration and the effect on the spine. the Bose seat actively minimizes vibration 
+by detecting vertical motion, even 0.25mm and up to 1000 Hz. The computer process the wave information and 
+responds with a signal to an actuator that operates a pneumatic pump to raise or lower the seat to counter 
+the incoming shock. Lowers vibration to between 0.2-0.3 eVDV (estimated vibration dose value). Normal is 
+between 0.8-1.2 eVDV. Seat also shapes to back in the same way the ObusForme car seat\cite{Bosetruckseat}.
+
+\subsection{Bus driver seat}
+The following report was compiled by the Optimal Performance Consultants company regarding the 
+inadequacies of a public bus cab and the negative effects on the health of the driver who has to sit 
+for many hours a day, similar to a cab driver. Among suggestions to alter the seat to be more ergonomic, 
+they also suggested a reform of the pedal operation that can result in long term ankle pain. 
+Their suggestions were:
+\begin{enumerate}
+\item Pedals should not require a rotation of more than 25 degrees relative to the rest position. 
+\item The more frequent the operation of the pedal, the smaller the minimum force limit should be, 
+i.e. more sensitive pedals. Minimum lower bound is 40N of force, and the supremum is 400N.
+\item The pedals should be mounted on an incline as opposed to flat against the floor to allow the leg 
+muscles to exert most of the force, minimizing strain on the ankles. 
+\item Most important was the suggestion to implement pedals to signal change of lane, thereby removing 
+the wrist operation procedure and wear on the wrists\cite{Ismail2003}. 
+\end{enumerate}
+
+
+
+\section{Engineering Problems}
+\label{sec:engprob}
+Several solutions have been presented to the issues of chronic pain
+(see section~\ref{sec:designs}), but implementing these solution in the context
+of a taxi raises problems, which will be examined in this section. These 
+problems are space, ease of use, and installation.
+
+\subsection{Space}
+\label{sec:space}
+
+Solutions exist that are designed to function as desk chairs or seats for truck
+drivers. These solutions, however, would need to be altered to fit in
+a taxi. The CVG GSX 3000 truck seat, for example, measures 1113~mm from base
+to top, and is 522~mm wide. The dimensions of a mid-size automobile
+are more restrictive than a truck, so solutions will have to deal with
+this reduced space.
+
+\subsection{Ease of Use}
+\label{sec:ease}
+Taxi drivers must frequently enter and exit their vehicles in the course of
+their duties, whether to assist customers with bags, or simply while awaiting
+a customer. Compared to long-haul truck drivers, taxi drivers must have less
+difficulty entering and exiting their vehicles. This should be kept in mind
+while designing any aspect of the driver's area.
+\subsection{Installation}
+\label{sec:installation}
+
+The vast majority of taxis are modified production cars, % Source: Interviews?
+and so certain aspects of existing reference designs would be difficult to
+implement. The standard steering wheel of an automobile, for example,
+would be difficult to modify to a 60\textdegree~range of
+rotation\cite{Ismail2003}. Feasibility of installation must then
+be considered when assessing any implementation of a solution.
+
+\section{Design Philosophy}
+\label{sec:philo}
+The design philosophy will guide the beginning stages of developing a
+solution for the health needs of Taxi Drivers in the City of
+Toronto. There are three key principles as high level objectives that
+will guide the design process of the solution to the outlined problem.
+ 
+\subsection{Efficacy}
+The design must strive to alleviate the professional exposure to
+chronic pain that taxi drivers experience. The main reason taxi
+drivers consider a career change is health. Thus, it is crucial that
+any design focuses on efficacy as the main priority\cite{chicago}. The
+degree to which the persistent pain of taxi drivers is reduced is the
+indicator of effectiveness. The ultimate goal would be to completely
+eliminate pain and create comfort for taxi drivers in a working
+environment.
+ 
+\subsection{Prevention}
+In addition to providing relief to drivers currently suffering from
+chronic pains, the design would also seek to prevent future long
+health problems. For new drivers, a preventative design would
+eliminate the risk of chronic pain due to the occupation. While for
+experienced drivers, prevention entails assurance that the chronic
+pain reduced does not return.
+ 
+\subsection{Accessibility}
+To suit the Taxi driver community, accessibility both economically and
+usage wise is important to accommodate. Considering that a majority of
+taxi drivers are experience economic
+uncertainty\cite{facey2003health}, any design aimed to improve the
+quality of life in taxi drivers must economically accessible design to
+the income of a taxi driver.
+ 
+\subsection{Convenience}
+For Taxi drivers, every minute could translate into possible business
+time\cite{facey2003health}. The time consumed by taxi drivers to
+operate any additional device should not deter from their
+incomes. Thus designs should also seek to allow the achievement of an
+elevated level of health without additional time consuming efforts.
+\section{Project Requirements}
+\label{sec:requirements}
+This section will present the objectives, constraints, and criteria 
+that frame the problem.
+
+\subsection{High-level Objectives}
+\label{sec:high-level-objectives}
+
+\begin{enumerate}
+\item Reduce the \emph{frequency} of chronic pain among Toronto taxi drivers
+\item Reduce the \emph{severity} of chronic pain among Toronto taxi drivers
+\item Achieve both of the above at a minimum cost to the stakeholders
+\end{enumerate}
+
+\subsection{Constraints}
+\begin{enumerate}
+\item \emph{Must} be capable of being installed in existing taxis.
+\item \emph{Must} comply with all of the Canadian Motor Vehicle Safety Regulations,
+specifically Schedule~IV \cite{motorregs}.
+\item \emph{Must not} reduce the amount of available passenger space.
+\item \emph{Must not} hinder ingress and egress from the vehicle.
+\end{enumerate}
+\subsection{Criteria}
+The following criteria will be used to assess all designs.
+\begin{table}[h]
+\centering
+\caption{Criteria and corresponding metrics}
+\begin{tabular}{r p{10cm} }
+  Criteria & Metric \\ \hline
+  Cost & Combined manufacturing and installation price (lower is better) \\
+  Ease of installation & Time required to install in taxi (less is better) \\
+  Breadth of effectiveness & Percentile range accommodated by device (higher is better) \\
+  Durability & Time before required maintenance (more is better) \\
+  Severity & Level of reported pain according to test (lower is better) \\
+  Frequency & Number of drivers reporting chronic pain (lower is better)
+\end{tabular}
+\end{table}
+
+\bibliographystyle{IEEEtranN}
+\bibliography{references,sourcessam,sourcesjudy,sourcesphil,sourcessam2}
+
+\end{document}
+
