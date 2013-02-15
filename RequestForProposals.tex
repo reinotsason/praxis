@@ -2,6 +2,7 @@
 \usepackage[super]{natbib}
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \usepackage{textcomp}
+\usepackage{multirow}
 \frenchspacing
 
 \begin{document}
@@ -461,6 +462,21 @@ The following criteria will be used to assess all designs.
 \end{tabular}
 \end{table}
 
+\subsection{Summary}
+
+\begin{table}[h!]
+\centering
+\caption{Summary of Objectives devolving constraints and criteria}
+\begin{tabular}{l l p{5cm}}
+Objective & Corresponding constraint/criteria & Corresponding metric \\ \hline
+\multirow{2}{*}{Reduce Frequency} & Frequency & Number of drivers reporting pain \\
+& Breadth of effectiveness & Percentile range accommodated \\
+Reduce Severity & Severity & Reported pain level \\
+\multirow{3}{*}{Minimize Cost} & Unit Cost & Combined manufacturing and installation price \\
+& Ease of Installation & Time required to install \\
+& Durability & Time before required maintenance \\
+\end{tabular}
+\end{table}
 \bibliographystyle{IEEEtranN}
 \bibliography{references,sourcessam,sourcesjudy,sourcesphil,sourcessam2}
 
