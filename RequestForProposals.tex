@@ -18,10 +18,10 @@ This Request for Proposal seeks a solution to the problem of chronic
 pain among taxi drivers in the City of Toronto. Research demonstrates a
 link between long periods of driving and chronic pain\cite{KneePain,
 Okunribido2008}, and taxi drivers are particularly susceptible to this
-due to their long shifts\cite{thestar2012}. This document will introduce
-definitions of key terms associated with the problem and the taxi community
-in the City of Toronto. Based on the establish context, the needs taxi drivers
-experience will be explored and framed into an problem in an engineering perspective. 
+due to their long shifts\cite{thestar2012, KneePain}. This document will introduce
+definitions of key terms associated with the issue and the taxi driver community
+in the City of Toronto. Based on the establish context, the needs of taxi drivers
+will be explored and framed into an engineering-oriented problem. 
 
 \section{Definitions}
 \label{sec:defs}
@@ -32,10 +32,10 @@ well as their prevalence to taxi drivers are outlined in this section.
 \label{sec:ergonomics}
 
 The International Ergonomics Association defines ergonomics as “the
-study of human interactions and other elements within a system”. By
-utilizing ergonomics, engineers are able to optimize the suitability
+study of human interactions and other elements within a system”\cite{ergo}. 
+Through the utiliztion of ergonomics, engineers are able to optimize the suitability
 of equipment for the structure and functioning method of the human
-body. The development of ergonomic equipment is applicable to
+being. The development of ergonomic equipment is applicable to
 taxi drivers because optimizing the interaction of the cab driver
 and the vehicle to avoid repetitive strain injuried will prolong
 the onset of chronic pain. 
@@ -44,9 +44,9 @@ the onset of chronic pain.
 \label{sec:pain}
 
 Continuous pain that persists for 12 weeks or more is defined to be
-chronic pain. As taxi driver experience a gradual onset of chronic
-pain, avoiding or delaying its onset would enhance their work
-environment and furthermore the quality of life of a taxi driver.
+chronic pain\cite{chronic}. As taxi driver experience a gradual onset of chronic
+pain, avoiding or delaying its onset would not only enhance their work
+environment, but also their quality of life.
 
 \subsection{Quality of Life}
 \label{sec:lifequal}
@@ -54,31 +54,33 @@ environment and furthermore the quality of life of a taxi driver.
 Quality of life is defined as an individual’s evaluation, based on
 their society’s culture and value systems, of their current status in
 life with regards to personal goals, expectations, standards and
-concerns. Improving to the quality of life of taxi drivers is the
+concerns\cite{WHO}. Improving to the quality of life of taxi drivers is the
 purpose of this report.
 
 \section{Community Description}
 \label{sec:community}
 The taxicab community in the City of Toronto consists of over 10400 registered drivers, 
-and 4849 issued legal license plates. This section examines the taxicab community of Toronto and 
-illustrates certain characteristics such as economics, demographics, representation and accountability.
+and 4849 issued legal license plates. This section examines and 
+illustrates certain characteristics of the taxicab community of Toronto such as economics, 
+demographics, representation and accountability.
 
 \subsection{Pre-requisites}
 To become a taxicab driver the following is required by the City of Toronto Municipal Licensing and Standards:
 \begin{enumerate}
-\item Complete the Effective Taxicab Training Program, a 17-day program run by the city. 
-Minimum pass average is 80\%. Program includes certification in first aid and CPR.
+\item Complete the Effective Taxicab Training Program, a 17-day program organized by the municipality. 
+The minimum pass average is 80\%; program includes certification in first aid and CPR.
 \item Pass a criminal record background check
 \item Have a G License
 \item Pass a physical checkup by a qualified physician
 \end{enumerate}
 The total cost of this program is \$601.23\cite{MLS2013}.
 
-Licences must renewed yearly on the anniversary of issue and a refresher course must 
-be completed once every three years\cite{MLSChp545}.
+Licences must renewed anually %on the anniversary of issue 
+and a refresher course must be completed once every three years\cite{MLSChp545}.
 
-iTaxiworkers association is the only representative body of the taxicab community. It
-works to improve the quality of life of taxidrivers in Ontario by "providing legal defence
+%This should not be here??
+iTaxiworkers association is the only representative body of the taxi driver community in the City of Toronto. 
+It works to improve the quality of life of taxi drivers in Ontario by "providing legal defence
 and political advocacy for justice and reform"\cite{iTaxiWorkers2012}. The Toronto chapter
 has a membership of over 1000 people. Membership is \$35 per month\cite{iTaxi2012, Abdiemail}.
 
@@ -101,84 +103,89 @@ The 2006 census conducted by iTaxi yielded the following results\cite{iTaxiWorke
 Drivers are almost always the sole breadwinner for their families\cite{Abdiphone}.
 
 \subsection{Plates}
-There are a number of different types of plates issued by the city but the vast majority 
+There are a number of different types of plates issued by the city. However, the vast majority 
 consist of two types of plates: standard (3451) and ambassador (1313)\cite{thestat2012}. 
-Standard plates enable multiple people to share the same vehicle and can be operated 24/7. 
 Ambassador plate can only be operated by one person (the owner of the plate) and can be 
 operated for a maximum of 12 hours a day. An ambassador license plate is required to 
-operate from Pearson International Airport. Standard licence plates can also be sold. 
-The current market value is up to \$300 000\cite{thestar2012}. The average taxi drives between 100 000 and 
-250 000 km per year\cite{thestar2012}. As a result the vehicles on average do not last more than 5 
-years\cite{thestar}. Payment is as follows: the drop rate is \$4.25 + 25 cents for every 0.143 km of 
+operate from Pearson International Airport. Standard plates enable multiple people to share the same vehicle
+and can be operated 24/7. Standard licence plates can be sold, and their
+current market value is up to \$300 000\cite{thestar2012}. On average, taxis travel between 100 000 and 
+250 000 km per year\cite{thestar2012}, and last less than 5 years\cite{thestar}. 
+
+%put this elsewhere
+Payment is as follows: the drop rate is \$4.25 + 25 cents for every 0.143 km of 
 travel\cite{thestar2012}.
 
 \subsection{Ownership and Responsibility}
 
 Almost all drivers belong to one of the major companies such as: Beck, Diamond, Royal, City and
-Co-op. The driver pays a yearly fee (varies by company) for a dispatch radio. The 
-driver is guided to a pickup location by a coordinator. Ownership also varies. For example, 
-at Beck Taxi, most of the vehicles are owned by the drivers themselves who just pay the 
+Co-op. Driver's pay a yearly fee (varies by company) for a dispatch radio. The 
+driver is guided to a pickup location by a coordinator. Ownerships also vary. For example, 
+at Beck Taxi, most of the vehicles are owned by the drivers themselves who pay the 
 rate for the radio and get the car painted the company colours. At Royal taxi, most of the 
-cars are owned by garages and leased by drivers. Other circumstances are a collective of 
-drivers who share the price of a plate and a vehicle and operate shifts. In all 
-circumstances the driver keeps the profit he/she makes during the shift, but is also 
+cars are owned by garages and leased to drivers. In other circumstances, a collection of 
+drivers share the price of a plate as well as a vehicle and operate in shifts. For all 
+circumstances the driver keeps the profit made during the shift, but is also 
 directly responsible for the cleanliness and integrity of the vehicle, including gasoline. 
 Inspections are made weekly, bi-weekly or monthly depending on the company and offenders 
-have their frequency cut off and do not receive guidance to customers. Drivers will also 
-tell other drivers if their cab is messy and report them if problem is not rectified. To 
-be cut-off is horribly detrimental to drivers because if not guided from one pickup to 
-the next, much time is wasted waiting for customers and as a result the cost of the radio 
-and/or lease cannot be earned back and no profit is made\cite{thestar2012, Gowder2013}.
+have their frequency cut off, no longer receive guidance to customers. Drivers also 
+warn employees if their cab left messy, and report them if problem is not rectified. Being removed from
+a company's service is detrimental to drivers because having guidance to a pickup location
+more is more profitable than searching for customers as it more than covers
+the cost of the radio and/or lease \cite{thestar2012, Gowder2013}.
 
 \section{Stakeholders}
 \label{sec:stake}
 Taxi drivers as a community are connected with many groups in the City
-of Toronto. Any design for Taxi drivers may potentially impact the
-stakeholders connected to Taxi Drivers as well.
+of Toronto. Any new designs for taxi drivers may impact
+stakeholders connected with their community.
  
 \subsection{Taxi Drivers}
-The primary stakeholder is the Taxi Driver community in the City of
-Toronto. These taxi drivers constitute the defined community with a
+The primary stakeholder is the taxi driver community in the City of
+Toronto. These taxi drivers constitute the preivously-defined community with a
 need. Improving the quality of life of this group through mitigating
 chronic pain is the main objective of this design.
  
 \subsection{Secondary Stakeholders} 
-Customers and the Taxi Driver Union directly interact with taxi 
-drivers in the City of Toronto. These stakeholders would be likely 
-affected by any changes in design to taxis or the operation of taxis 
+Customers and the taxi driver union directly interact with taxi 
+drivers in the City of Toronto. These stakeholders would likely be 
+affected by any changes in the design of taxis or the operation of taxis 
 in the city. 
 
 \subsubsection{Taxi Driver Union: iTaxiworkers Association}
-The association represents taxi drivers in Toronto and provides 
-support for conflicts arising from police, dispatchers, systems or 
+The iTaxiworkers association represents taxi drivers in Toronto and provides 
+support for conflicts arising from police, dispatchers systems, and 
 taxi companies. They are politically active in lobbying for improved 
-working conditions for Taxi Drivers. The successful development of a 
-design solution may involved dialogue with the association and the 
-successfully implementation of a solution may involve promotion by the 
-iTaxiworkers Associaion\cite{itaxi}. 
+working conditions for taxi drivers. The successful development of a 
+design solution may involve dialogue with the association and
+successful implementation of a solution may involve promotion by the 
+iTaxiworkers Association\cite{itaxi}. 
+
+%fix that last sentence
 
 \subsubsection{Customers}
-Taxi drivers are part of the service and tourism industry. The customers 
-as the clients of taxi drivers are the consumers of the services. Taxi 
-drivers in Toronto interact with customers both local and international 
-at all hours of the day. Solutions to improve the health of taxi drivers 
+Taxi drivers are part of the service and tourism industry. Customers,
+clients of taxi drivers, are the consumers of the services. Taxi 
+drivers in Toronto interact with both local and international customers 
+24 hours a day. Solutions to improve the health of taxi drivers 
 may require the assistance of customers or a change in the customer 
 experience. An effective solution to the proposed problem may increase 
 the safety of and improve the riding environment of passengers. 
  
+ %take out the last sentence
+ 
 \subsection{Additional Stakeholders}
 
 The following stakeholders are associated with taxi drivers in the City 
-of Toronto but less directly related to the needs of the taxi driver 
-community. 
+of Toronto, but less directly related to their needs. 
 
 \begin{center}
     \begin{tabular}{ l p{5cm} p{5cm}}
     Stakeholder & Relations &	Interest \\ \hline
     Taxi Manufacturers & Provide vehicles and equipment for taxi drivers	& 
-    A technical solution needs to be achievable by technologies available 
+    Any technical solution needs to be achievable by technologies available 
     to the taxi manufacturers. \\ 
-    Taxi Companies & Employers of taxi drivers or centralize dispatch 
+    Taxi companies & Employers of taxi drivers or centralize dispatch 
     operation for taxi drivers	& Solution may require additional funding 
     or approval from the taxi companies for implementation. \\
     City of Toronto & Standardizes and establishes relevant policies 
