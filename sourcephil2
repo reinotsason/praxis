@@ -1,0 +1,134 @@
+
+@article{ODrivers@Risk,     
+author  = " Magnusson, Marianne and Pope, Malcolm H. and Wilder, David G. and Areskoug, Björn",  
+title   = " Are {O}ccupational {D}rivers at an {I}ncreased {R}isk for {D}eveloping {M}usculoskeletal {D}isorders?",     
+year    = "1995",     
+journal = " Spine",     
+volume  = "21",     
+number  = "6",     
+pages   = " 710–717" }
+
+@article{KneePain,     
+author  = " Jiu-Chiaun Chen and Jack T. Dennerlein and Tung-Sheng Shih and Chiou-Jong Chen and Yawen Cheng and Wushou P. Chang and Louise M. Ryan, and David C. Christiani",  
+title   = " Knee {P}ain and {D}riving {D}uration: {A} {S}econdary {A}nalysis of the {T}axi {D}rivers’ {H}ealth {S}tudy
+year    = "2004",     
+journal = " Am J Public Health",     
+volume  = "94",     
+number  = "4",     
+pages   = " 575–581" }
+ 
+@article{Serious,     
+author  = "Mitsuhiko Funakoshi and Kazushi Taoda and Hiroji Tsujimure and Ktasuo Nishiyama",  
+title   = "Measurement of Whole-Body Vibration in Taxi Drivers",
+year    = "2004",     
+journal = “J Occup Healthy",     
+volume  = "46",     
+pages   = " 119-124" }
+
+@article{Question?,     
+author  = "Ruth Kaanaas and Donald Anderson ",  
+title   = "A questionnaire survey of {N}orwegian taxi drivers’ musculoskeletal health, and work-related risk factors",
+year    = "2008",     
+journal = " International Journal of Industrial Ergonomics",     
+volume  = "38",     
+number  = "3-4",     
+pages   = " 280-290" }
+
+@article{POSTULATED,     
+author  = "Jiu-Chiuan Chen and Wen-Ruey Chang and Wushou Chang and David Christiani ",  
+title   = "Occupational factors associated with low back pain in urban taxi drivers",
+year    = "2005",     
+journal = “Occupational Medicine",     
+volume  = "55",     
+pages   = "535-540" }
+
+@article{68%,     
+author  = "Barbara Jean Burgel and Marion Gillen and Mary Castle White",  
+title   = "Health and {S}afety {S}trategies of {U}rban {T}axi {D}rivers",
+year    = "2012",     
+journal = “Journal of Urban Healthy",     
+volume  = "89",     
+number  = "4",     
+}
+
+@misc{RSI,     
+author  = " Chris Adams",  
+title   = "{R}epetitive {Strain {I}njury",
+url = http://ergonomics.about.com/od/repetitivestressinjuries/f/whatisrstraini.htm
+}
+
+@article{Osteoarthritis,     
+author  = " Cyrus Cooper and Tim McAlindon and David Coggon and Peter Egger and Paul Dieppe",  
+title   = "Occupational activity and osteoarthritis of the
+knee",
+year    = "1994",     
+journal = “Annals of the Rhuematic Diseases",     
+volume  = "553",     
+pages   = "90-93" }
+}
+
+@misc{proof,       
+title   = "Driving and Ergonomics",
+year    = "2009",     
+url = “http://www.ccohs.ca/oshanswers/ergonomics/driving.html”
+}
+
+@article{neck,     
+author  = "Geertje AM Ariens and Willem van Mechelen and Paulien Bongers and Lex Bouter and Gerrit van der Wal",  
+title   = "Physical risk factors for neck pain",
+year    = "2000",     
+journal = “Scand J Work Environ Health",     
+volume  = "26",     
+number  = "1",     
+pages   = "7-19" }
+}
+
+@misc{ergo,     
+title   = "The {D}iscipline of {E}rgonomics",
+year    = "2000",     
+url = http://www.iea.cc/01_what/What%20is%20Ergonomics.html
+}
+
+@article{chronic,     
+author  = "Ted Birse and Janice Lander",  
+title   = "Prevalence of {C}hronic {P}ain",
+year    = "1998",     
+journal = "Canadian Journal of Public Health”,     
+volume  = "131"
+}
+
+@misc{WHO,     
+title   = "Measuring Quality of Life",
+url = “http://www.who.int/mental_health/media/68.pdf”
+}
+
+
+@article{thxtips,   
+author  = "Barbara Jean Burgel and Marion Gillen and Mary Castle White",  
+title   = “Health and {S}afety {S}trategies of {U}rban {T}axi {D}rivers",
+year    = "2012",     
+journal = “Journal of Urban Health",     
+volume  = "89",     
+number  = "4",     
+pages   = "717" }
+
+@techreport{policeverywherejustnowhere,    
+author    = "Philip Stenning",     
+title     = "FARE GAME, FARE COP",     
+institution = "Department of Justice",     
+year      = "1996",     
+}
+
+@article{socialcomplex,     
+author  = "Kevin Haines",  
+title   = "{CRIME IS A SOCIAL PROBLEM}",
+year    = "1999",     
+journal = “European Journal on Criminal Policy and Research",     
+volume  = "7",     
+number  = "2",     
+pages   = "263-275" }
+
+
+@misc{foundhealthy, author = "Maria M",
+title = "Effects of Back Pain", url = "http://www.foundhealth.com/back-pain/effects-of-back-pain" }
+
