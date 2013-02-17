@@ -7,12 +7,13 @@
 \frenchspacing
 
 \begin{document}
-\title{Request for Proposal}
-\author{F2139-01}
+\title{Request for Proposal: \\Chronic Pain among Taxi Drivers in the
+  City of Toronto}
 \maketitle
 \begin{abstract}
 \input{Abstract.tex}
 \end{abstract}
+\tableofcontents
 \section{Introduction}
 \label{sec:intro}
 This Request for Proposal seeks a solution to the problem of chronic
@@ -134,69 +135,6 @@ warnings if their cab is left messy, and may be reported if the problem perpetua
 a company's service is detrimental to drivers because having guidance to a pickup location
 is more profitable than searching for customers. The addition income through using a dispatcher 
 service more than covers the cost of the radio and/or lease \cite{thestar2012, Gowder2013}.
-
-\section{Stakeholders}
-\label{sec:stake}
-Taxi drivers as a community are connected with many groups in the City
-of Toronto. Any new designs for taxi drivers may impact
-stakeholders connected with their community.
- 
-\subsection{Taxi Drivers}
-The primary stakeholder is the taxi driver community in the City of
-Toronto. These taxi drivers constitute the previously-defined community with a
-need. Improving the quality of life of this group through mitigating
-chronic pain is the main objective of this design.
- 
-\subsection{Secondary Stakeholders} 
-Customers and the taxi driver union directly interact with taxi 
-drivers in the City of Toronto. These stakeholders would likely be 
-affected by any changes in the design of taxis or the operation of taxis 
-in the city. 
-
-\subsubsection{Taxi Driver Union: iTaxiworkers Association}
-The iTaxiworkers association represents taxi drivers in Toronto and provides 
-support for conflicts arising between drivers, police, dispatchers, and 
-taxi companies. They are politically active in lobbying for improved 
-working conditions for taxi drivers. The successful development of a 
-design solution may involve dialogue with the association and
-successful implementation of a solution may involve promotion by the 
-iTaxiworkers Association\cite{itaxi}. 
-
-%fix that last sentence
-
-\subsubsection{Customers}
-Taxi drivers are part of the service and tourism industry. Customers,
-clients of taxi drivers, are the consumers of the services. Taxi 
-drivers in Toronto interact with both local and international customers 
-24 hours a day. Solutions to improve the health of taxi drivers 
-may require the assistance of customers or a change in the customer 
-experience. An effective solution to the proposed problem may increase 
-the safety of and improve the riding environment of passengers. 
- 
- %take out the last sentence
- 
-\subsection{Additional Stakeholders}
-
-The following stakeholders are associated with taxi drivers in the City 
-of Toronto, but less directly related to their needs. 
-
-\begin{table}[h]
-  \centering
-  \caption{Additional stakeholders}
-    \begin{tabular}{ l p{5cm} p{5cm}}
-    Stakeholder & Relations &	Interest \\ \hline
-    Taxi Manufacturers & Provide vehicles and equipment for taxi drivers	& 
-    Any technical solution needs to be achievable by technologies available 
-    to the taxi manufacturers. \\ 
-    Taxi Companies & Employers of taxi drivers or centralize dispatch 
-    operation for taxi drivers	& Solution may require additional funding 
-    or approval from the taxi companies for implementation. \\
-    City of Toronto & Standardizes and establishes relevant policies 
-    affecting taxi drivers \cite{CityofToronto}	& Successful designs or design changes of  
-    taxis may require endorsement by the city  \\
-    \end{tabular}
-\end{table}
-
 \section{Needs}
 \label{sec:needs}
 Taxi drivers are subject to several needs due to their
@@ -274,7 +212,125 @@ neck\cite{proof}. This is supported by correlations between between both prolong
 twisting or bending of the trunk and neck pain \cite{neck}. 
 As a taxi driver experiences prolonged sitting periods and frequently bend/twist \cite{Okunribido2008, POSTULATED},
 it is evident that their work-place environment stimulates neck pain. 
+\section{Stakeholders}
+\label{sec:stake}
+Taxi drivers as a community are connected with many groups in the City
+of Toronto. Any new designs for taxi drivers may impact
+stakeholders connected with their community.
+ 
+\subsection{Taxi Drivers}
+The primary stakeholder is the taxi driver community in the City of
+Toronto. These taxi drivers constitute the previously-defined community with a
+need. Improving the quality of life of this group through mitigating
+chronic pain is the main objective of this design.
+ 
+\subsection{Secondary Stakeholders} 
+Customers and the taxi driver union directly interact with taxi 
+drivers in the City of Toronto. These stakeholders would likely be 
+affected by any changes in the design of taxis or the operation of taxis 
+in the city. 
 
+\subsubsection{Taxi Driver Union: iTaxiworkers Association}
+The iTaxiworkers association represents taxi drivers in Toronto and provides 
+support for conflicts arising between drivers, police, dispatchers, and 
+taxi companies. They are politically active in lobbying for improved 
+working conditions for taxi drivers. The successful development of a 
+design solution may involve dialogue with the association and
+successful implementation of a solution may involve promotion by the 
+iTaxiworkers Association\cite{itaxi}. 
+
+%fix that last sentence
+
+\subsubsection{Customers}
+Taxi drivers are part of the service and tourism industry. Customers,
+clients of taxi drivers, are the consumers of the services. Taxi 
+drivers in Toronto interact with both local and international customers 
+24 hours a day. Solutions to improve the health of taxi drivers 
+may require the assistance of customers or a change in the customer 
+experience. An effective solution to the proposed problem may increase 
+the safety of and improve the riding environment of passengers. 
+ 
+ %take out the last sentence
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.3]{Flowchart.pdf}
+  \caption{Inter-relationships between stakeholders}
+\end{figure}
+\subsection{Additional Stakeholders}
+
+The following stakeholders are associated with taxi drivers in the City 
+of Toronto, but less directly related to their needs. 
+
+\begin{table}[h]
+  \centering
+  \caption{Additional stakeholders}
+    \begin{tabular}{ l p{5cm} p{5cm}}
+    Stakeholder & Relations &	Interest \\ \hline
+    Taxi Manufacturers & Provide vehicles and equipment for taxi drivers	& 
+    Any technical solution needs to be achievable by technologies available 
+    to the taxi manufacturers. \\ 
+    Taxi Companies & Employers of taxi drivers or centralize dispatch 
+    operation for taxi drivers	& Solution may require additional funding 
+    or approval from the taxi companies for implementation. \\
+    City of Toronto & Standardizes and establishes relevant policies 
+    affecting taxi drivers \cite{CityofToronto}	& Successful designs or design changes of  
+    taxis may require endorsement by the city  \\
+    \end{tabular}
+\end{table}
+\clearpage
+\section{Project Requirements}
+\label{sec:requirements}
+This section will present the objectives, constraints, and criteria 
+that frame the problem.
+
+\subsection{High-level Objectives}
+\label{sec:high-level-objectives}
+
+\begin{enumerate}
+\item Reduce the \emph{frequency} of chronic pain among Toronto taxi drivers
+\item Reduce the \emph{severity} of chronic pain among Toronto taxi drivers
+%the objectives should be be recursive LOL 
+\item Achieve both of the above at a minimum cost to the stakeholders
+\end{enumerate}
+
+\subsection{Constraints}
+\begin{enumerate}
+\item \emph{Must} be capable of being installed in existing taxis.
+\item \emph{Must} comply with all of the Canadian Motor Vehicle Safety Regulations,
+specifically Schedule~IV \cite{motorregs}.
+\item \emph{Must not} reduce the amount of available passenger space.
+\item \emph{Must not} hinder ingress and egress from the vehicle.
+\end{enumerate}
+\subsection{Criteria}
+The following criteria will be used to assess all designs.
+\begin{table}[h]
+\centering
+\caption{Criteria and corresponding metrics}
+\begin{tabular}{c p{10cm} }
+  Criteria & Metric \\ \hline
+  Cost & Combined manufacturing and installation price (lower is better) \\
+  Ease of installation & Time required to install in taxi (less is better) \\
+  Breadth of effectiveness & Percentile range accommodated by device (higher is better) \\
+  Durability & Time before required maintenance (more is better) \\
+  Severity & Level of reported pain according to test (lower is better) \\
+  Frequency & Number of drivers reporting chronic pain (lower is better)
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\caption{Summary of Objectives devolving criteria}
+\begin{tabular}{l l p{5cm}}
+Objective & Corresponding criteria & Corresponding metric \\ \hline
+\multirow{2}{*}{Reduce Frequency} & Frequency & Number of drivers reporting pain \\
+& Breadth of effectiveness & Percentile range accommodated \\ \hline
+Reduce Severity & Severity & Reported pain level \\ \hline
+\multirow{3}{*}{Minimize Cost} & Unit Cost & Combined manufacturing and installation price \\
+& Ease of Installation & Time required to install \\
+& Durability & Time before required maintenance \\
+\end{tabular}
+\end{table}
+\newpage
 \section{Reference Designs}
 \label{sec:designs}
 
@@ -443,60 +499,6 @@ trends of taxi drivers need to be consider in order to create a design
 that enables all drivers to achieve an elevated level of health 
 without additional time consuming efforts.
 
-\section{Project Requirements}
-\label{sec:requirements}
-This section will present the objectives, constraints, and criteria 
-that frame the problem.
-
-\subsection{High-level Objectives}
-\label{sec:high-level-objectives}
-
-\begin{enumerate}
-\item Reduce the \emph{frequency} of chronic pain among Toronto taxi drivers
-\item Reduce the \emph{severity} of chronic pain among Toronto taxi drivers
-%the objectives should be be recursive LOL 
-\item Achieve both of the above at a minimum cost to the stakeholders
-\end{enumerate}
-
-\subsection{Constraints}
-\begin{enumerate}
-\item \emph{Must} be capable of being installed in existing taxis.
-\item \emph{Must} comply with all of the Canadian Motor Vehicle Safety Regulations,
-specifically Schedule~IV \cite{motorregs}.
-\item \emph{Must not} reduce the amount of available passenger space.
-\item \emph{Must not} hinder ingress and egress from the vehicle.
-\end{enumerate}
-\subsection{Criteria}
-The following criteria will be used to assess all designs.
-\begin{table}[h]
-\centering
-\caption{Criteria and corresponding metrics}
-\begin{tabular}{c p{10cm} }
-  Criteria & Metric \\ \hline
-  Cost & Combined manufacturing and installation price (lower is better) \\
-  Ease of installation & Time required to install in taxi (less is better) \\
-  Breadth of effectiveness & Percentile range accommodated by device (higher is better) \\
-  Durability & Time before required maintenance (more is better) \\
-  Severity & Level of reported pain according to test (lower is better) \\
-  Frequency & Number of drivers reporting chronic pain (lower is better)
-\end{tabular}
-\end{table}
-
-\subsection{Summary}
-
-\begin{table}[h!]
-\centering
-\caption{Summary of Objectives devolving constraints and criteria}
-\begin{tabular}{l l p{5cm}}
-Objective & Corresponding constraint/criteria & Corresponding metric \\ \hline
-\multirow{2}{*}{Reduce Frequency} & Frequency & Number of drivers reporting pain \\
-& Breadth of effectiveness & Percentile range accommodated \\ \hline
-Reduce Severity & Severity & Reported pain level \\ \hline
-\multirow{3}{*}{Minimize Cost} & Unit Cost & Combined manufacturing and installation price \\
-& Ease of Installation & Time required to install \\
-& Durability & Time before required maintenance \\
-\end{tabular}
-\end{table}
 \bibliographystyle{IEEEtranN}
 \bibliography{references,sourcessam,sourcesjudy,sourcessam2,sourcesphil2}
 
